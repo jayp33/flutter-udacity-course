@@ -52,8 +52,10 @@ class CategoryRoute extends StatelessWidget {
       ));
     }
 
-    // TODO: Create a list view of the Categories
-    final listView = Container();
+    final listView = ListView.builder(
+      itemBuilder: (BuildContext context, int index) => _categories[index],
+      itemCount: _categories.length,
+    );
 
     // TODO: Create an App Bar
     final appBar = AppBar();
