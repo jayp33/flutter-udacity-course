@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 import 'category.dart';
 
-// TODO: Define any constants
+final mainColor = Colors.green[100];
 
 /// Category Route (screen).
 ///
@@ -53,6 +53,7 @@ class CategoryRoute extends StatelessWidget {
     }
 
     final listView = Container(
+        color: mainColor,
         padding: EdgeInsets.symmetric(horizontal: 8.0),
         child: ListView.builder(
           itemBuilder: (BuildContext context, int index) => _categories[index],
@@ -65,6 +66,7 @@ class CategoryRoute extends StatelessWidget {
         style: TextStyle(fontSize: 30.0, color: Colors.black),
       ),
       centerTitle: true,
+      backgroundColor: mainColor,
       elevation: 0.0,
     );
 
