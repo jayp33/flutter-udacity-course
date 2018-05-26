@@ -37,12 +37,10 @@ class Category extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100.0,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(50.0)),
-      ),
       child: Padding(
         padding: EdgeInsets.all(8.0),
         child: InkWell(
+          borderRadius: BorderRadius.all(Radius.circular(50.0)),
           onTap: () {
             print('I was tapped!');
           },
