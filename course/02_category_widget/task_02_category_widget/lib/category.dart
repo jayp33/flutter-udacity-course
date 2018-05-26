@@ -37,25 +37,23 @@ class Category extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100.0,
-      child: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: InkWell(
-          borderRadius: BorderRadius.all(Radius.circular(50.0)),
-          onTap: () {
-            print('I was tapped!');
-          },
-          splashColor: _categoryColor,
-          highlightColor: _categoryColor,
-          child: Row(
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Icon(_categoryIcon, size: 60.0),
-              ),
-              Center(
-                  child: Text(_categoryName, style: TextStyle(fontSize: 24.0))),
-            ],
-          ),
+      padding: EdgeInsets.all(8.0),
+      child: InkWell(
+        borderRadius: BorderRadius.all(Radius.circular(50.0)),
+        onTap: () {
+          print('I was tapped!');
+        },
+        splashColor: _categoryColor,
+        highlightColor: _categoryColor,
+        child: Row(
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Icon(_categoryIcon, size: 60.0),
+            ),
+            Center(
+                child: Text(_categoryName, style: TextStyle(fontSize: 24.0))),
+          ],
         ),
       ),
     );
