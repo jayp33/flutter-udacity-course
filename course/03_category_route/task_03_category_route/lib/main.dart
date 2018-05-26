@@ -23,7 +23,7 @@ class UnitConverterApp extends StatelessWidget {
       title: 'Unit Converter',
       // TODO: Instead of pointing to exactly 1 Category widget,
       // our home should now point to an instance of the CategoryRoute widget.
-      home: Container(),
+      home: CategoryRoute(),
     );
   }
 }
