@@ -19,15 +19,19 @@ class Category extends StatelessWidget {
   /// A [Category] saves the name of the Category (e.g. 'Length'), its color for
   /// the UI, and the icon that represents it (e.g. a ruler).
 
-  String _categoryName;
-  IconData _categoryIcon;
-  Color _categoryColor;
+  final String name;
+  final IconData iconLocation;
+  final ColorSwatch color;
 
-  Category(String categoryName, IconData categoryIcon, Color categoryColor) {
-    this._categoryName = categoryName;
-    this._categoryIcon = categoryIcon;
-    this._categoryColor = categoryColor;
-  }
+  const Category({
+    Key key,
+    @required this.name,
+    @required this.color,
+    @required this.iconLocation,
+  })  : assert(name != null),
+        assert(color != null),
+        assert(iconLocation != null),
+        super(key: key);
 
   /// Builds a custom widget that shows [Category] information.
   ///
@@ -48,16 +52,15 @@ class Category extends StatelessWidget {
           onTap: () {
             print('I was tapped!');
           },
-          splashColor: _categoryColor,
-          highlightColor: _categoryColor,
+          splashColor: color,
+          highlightColor: color,
           child: Row(
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.all(16.0),
-                child: Icon(_categoryIcon, size: 60.0),
+                child: Icon(iconLocation, size: 60.0),
               ),
-              Center(
-                  child: Text(_categoryName, style: TextStyle(fontSize: 24.0))),
+              Center(child: Text(name, style: TextStyle(fontSize: 24.0))),
             ],
           ),
         ),
