@@ -52,10 +52,12 @@ class CategoryRoute extends StatelessWidget {
       ));
     }
 
-    final listView = ListView.builder(
-      itemBuilder: (BuildContext context, int index) => _categories[index],
-      itemCount: _categories.length,
-    );
+    final listView = Container(
+        padding: EdgeInsets.symmetric(horizontal: 8.0),
+        child: ListView.builder(
+          itemBuilder: (BuildContext context, int index) => _categories[index],
+          itemCount: _categories.length,
+        ));
 
     final appBar = AppBar(
       title: Text(
