@@ -62,6 +62,8 @@ class CategoryRoute extends StatelessWidget {
         'Unit Converter',
         style: TextStyle(fontSize: 30.0, color: Colors.black),
       ),
+      centerTitle: true,
+      elevation: 0.0,
     );
 
     return Scaffold(
