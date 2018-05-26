@@ -44,7 +44,7 @@ class Category extends StatelessWidget {
             padding: EdgeInsets.all(16.0),
             child: Icon(_categoryIcon),
           ),
-          Center(child: Text(_categoryName)),
+          Center(child: Text(_categoryName, style: TextStyle(fontSize: 24.0))),
         ],
       ),
     );
