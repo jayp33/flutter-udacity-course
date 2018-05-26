@@ -38,6 +38,9 @@ class Category extends StatelessWidget {
     // TODO: Build the custom widget here, referring to the Specs.
     return Container(
       height: 100.0,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(50.0)),
+      ),
       child: Padding(
         padding: EdgeInsets.all(8.0),
         child: Row(
