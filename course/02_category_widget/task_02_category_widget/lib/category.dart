@@ -44,6 +44,9 @@ class Category extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.all(8.0),
         child: InkWell(
+          onTap: () {
+            print('I was tapped!');
+          },
           child: Row(
             children: <Widget>[
               Padding(
