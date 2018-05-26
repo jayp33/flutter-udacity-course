@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 
-// TODO: Check if we need to import anything
+import 'category.dart';
 
 // TODO: Define any constants
 
