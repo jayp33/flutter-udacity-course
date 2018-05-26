@@ -36,6 +36,7 @@ class Category extends StatelessWidget {
   // See https://docs.flutter.io/flutter/material/Theme-class.html
   Widget build(BuildContext context) {
     return Material(
+      color: Colors.transparent,
       child: Container(
         height: 100.0,
         padding: EdgeInsets.all(8.0),
