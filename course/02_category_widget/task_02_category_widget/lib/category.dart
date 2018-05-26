@@ -35,7 +35,6 @@ class Category extends StatelessWidget {
   // Theme ancestor in the tree. Below, we obtain the display1 text theme.
   // See https://docs.flutter.io/flutter/material/Theme-class.html
   Widget build(BuildContext context) {
-    // TODO: Build the custom widget here, referring to the Specs.
     return Container(
       height: 100.0,
       decoration: BoxDecoration(
@@ -47,6 +46,8 @@ class Category extends StatelessWidget {
           onTap: () {
             print('I was tapped!');
           },
+          splashColor: _categoryColor,
+          highlightColor: _categoryColor,
           child: Row(
             children: <Widget>[
               Padding(
