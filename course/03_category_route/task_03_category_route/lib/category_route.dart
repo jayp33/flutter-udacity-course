@@ -42,9 +42,15 @@ class CategoryRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Create a list of the eight Categories, using the names and colors
-    // from above. Use a placeholder icon, such as `Icons.cake` for each
-    // Category. We'll add custom icons later.
+    final _categories = <Category>[];
+
+    for (var i = 0; i < _categoryNames.length; i++) {
+      _categories.add(Category(
+        name: _categoryNames[i],
+        color: _baseColors[i],
+        iconLocation: Icons.cake,
+      ));
+    }
 
     // TODO: Create a list view of the Categories
     final listView = Container();
