@@ -40,7 +40,10 @@ class Category extends StatelessWidget {
       height: 100.0,
       child: Row(
         children: <Widget>[
-          Icon(_categoryIcon),
+          Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Icon(_categoryIcon),
+          ),
           Center(child: Text(_categoryName)),
         ],
       ),
