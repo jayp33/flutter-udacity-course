@@ -36,6 +36,14 @@ class Category extends StatelessWidget {
   // See https://docs.flutter.io/flutter/material/Theme-class.html
   Widget build(BuildContext context) {
     // TODO: Build the custom widget here, referring to the Specs.
-    return Container();
+    return Container(
+      height: 100.0,
+      child: Row(
+        children: <Widget>[
+          Icon(_categoryIcon),
+          Center(child: Text(_categoryName)),
+        ],
+      ),
+    );
   }
 }
